@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ControlCenter Login</title>
+
+    <!-- AdminLTE + FontAwesome -->
+    <link rel="stylesheet" href="/adminlte/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/adminlte/css/adminlte.min.css">
+
+    <!-- Custom Pink Style -->
+    <link rel="stylesheet" href="/css/custom.css">
+</head>
+<body class="login-page" style="background-color:#ffe6f2;">
+    <div class="login-box">
+        <div class="login-logo">
+            <b style="color:#ff4da6;">ControlCenter</b>
+        </div>
+        <div class="card">
+            <div class="card-body login-card-body">
+                <p class="login-box-msg">Inicia sesión para continuar</p>
+                <% if (error) { %>
+                    <div class="alert alert-danger py-1 text-center">
+                        <%= error %>
+                    </div>
+                <% } %>
+                    
+                <form action="/login" method="POST">
+                    <div class="input-group mb-3">
+                        <input type="text" name="user" class="form-control" placeholder="Usuario">
+                        <div class="input-group-append">
+                            <div class="input-group-text"><span class="fas fa-user"></span></div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="password" name="pass" class="form-control" placeholder="Contraseña">
+                        <div class="input-group-append">
+                            <div class="input-group-text"><span class="fas fa-lock"></span></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <button class="btn btn-block" style="background-color:#ff4da6;color:white;">
+                                Entrar
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
