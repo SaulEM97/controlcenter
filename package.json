@@ -1,0 +1,21 @@
+{
+  "name": "controlcenter",
+  "version": "1.0.0",
+  "description": "ControlCenter DevOps Dashboard",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "admin-lte": "^3.2.0",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
